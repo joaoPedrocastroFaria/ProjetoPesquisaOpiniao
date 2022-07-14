@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\faj2ct\\Desktop\\PesquisaOpiniao\\Controller\\Controller.csproj": {}
+    "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Controller\\Controller.csproj": {}
   },
   "projects": {
-    "C:\\Users\\faj2ct\\Desktop\\PesquisaOpiniao\\Controller\\Controller.csproj": {
+    "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Controller\\Controller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\faj2ct\\Desktop\\PesquisaOpiniao\\Controller\\Controller.csproj",
+        "projectUniqueName": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Controller\\Controller.csproj",
         "projectName": "Controller",
-        "projectPath": "C:\\Users\\faj2ct\\Desktop\\PesquisaOpiniao\\Controller\\Controller.csproj",
-        "packagesPath": "C:\\Users\\faj2ct\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\faj2ct\\Desktop\\PesquisaOpiniao\\Controller\\obj\\",
+        "projectPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Controller\\Controller.csproj",
+        "packagesPath": "C:\\Users\\BAL4CT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Controller\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\faj2ct\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BAL4CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,7 +27,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\DTO\\DTO.csproj": {
+                "projectPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\DTO\\DTO.csproj"
+              },
+              "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -59,6 +66,128 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\DTO\\DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\DTO\\DTO.csproj",
+        "projectName": "DTO",
+        "projectPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\DTO\\DTO.csproj",
+        "packagesPath": "C:\\Users\\BAL4CT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\BAL4CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\BAL4CT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\BAL4CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

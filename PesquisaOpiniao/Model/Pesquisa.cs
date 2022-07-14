@@ -59,15 +59,6 @@ public class Pesquisa
             var pesquisa = context.Pesquisa.FirstOrDefault(p=>p.Id == id);
             ValidateObjectData();
             ValidateObjectExistence();
-            var perguntas = context.Pergunta.Include(p=>p.Pesquisa).Where(p=>p.Pesquisa.Id == pesquisa.Id);
-            foreach(var pergunta in perguntas){
-                var respostas = context.Resposta.Include(p=>p.Pergunta).Where(r=>r.Pergunta.Id == pergunta.Id);
-                var alternativas = context.Alternativas.Include(p=>p.Pergunta).Where(a=>a.Pergunta.Id == pergunta.Id);
-
-                context.Resposta.RemoveRange(respostas);
-                context.Alternativas.RemoveRange(alternativas);
-            }
-            context.Pergunta.RemoveRange(perguntas);
             context.Pesquisa.Remove(pesquisa);
             context.SaveChanges();
         }
@@ -75,6 +66,12 @@ public class Pesquisa
     public static object findById(int id){
         using (var context =new Context()){
             var pesquisa = context.Pesquisa.Where(a=>a.Id==id).Single();
+            return pesquisa;
+        }
+    }
+    public static object getByCodigo(string codigo){
+        using(var context =new Context()){
+            var pesquisa = context.Pesquisa.Where(a=>a.Codigo == codigo).Single();
             return pesquisa;
         }
     }

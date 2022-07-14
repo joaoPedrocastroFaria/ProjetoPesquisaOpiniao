@@ -66,10 +66,6 @@ public class Pergunta
             var pergunta = context.Pergunta.FirstOrDefault(p=>p.Id == id );
             ValidateObjectData();
             ValidateObjectExistence();
-            var respostas = context.Resposta.Include(p=>p.Pergunta).Where(r=>r.Pergunta.Id == pergunta.Id);
-            var alternativas = context.Alternativas.Include(p=>p.Pergunta).Where(a=>a.Pergunta.Id == pergunta.Id);
-            context.Resposta.RemoveRange(respostas);
-            context.Alternativas.RemoveRange(alternativas);
             context.Pergunta.Remove(pergunta);
             context.SaveChanges();
         }

@@ -4,14 +4,15 @@ using Model;
 
 namespace Controller.Controllers;
 
-
 [ApiController]
 [Route("Pesquisa")]
-public class PesquisaController : Controllerbase{
+public class PesquisaController : ControllerBase {
 
     [HttpGet]
     [Route("get")]
-    public IActionResult getPesquisa(){
-        
+    public IActionResult getPesquisa([FromBody]string codigo){
+        var pesquisa = Model.Pesquisa.getByCodigo(codigo);
+
+        return new ObjectResult(pesquisa);
     }
 }

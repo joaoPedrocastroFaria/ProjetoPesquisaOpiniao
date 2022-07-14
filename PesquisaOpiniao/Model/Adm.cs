@@ -65,19 +65,6 @@ public class Adm : Interfaces.IvalidateObject
             var adm = context.Adm.FirstOrDefault(i=>i.Id == id);
             ValidateObjectData();
             ValidateObjectExistence();
-            var pesquisas = context.Pesquisa.Include(a=>a.Adm).Where(p=>p.Adm.Id == adm.Id);
-            foreach(var pesquisa in pesquisas){
-                var perguntas = context.Pergunta.Include(p=>p.Pesquisa).Where(p=>p.Pesquisa.Id == pesquisa.Id);
-                foreach(var pergunta in perguntas){
-                    var respostas = context.Resposta.Include(p=>p.Pergunta).Where(r=>r.Pergunta.Id == pergunta.Id);
-                    var alternativas = context.Alternativas.Include(p=>p.Pergunta).Where(a=>a.Pergunta.Id == pergunta.Id);
-
-                    context.Resposta.RemoveRange(respostas);
-                    context.Alternativas.RemoveRange(alternativas);
-                }
-                context.Pergunta.RemoveRange(perguntas);
-            }
-            context.Pesquisa.RemoveRange(pesquisas);
             context.Adm.Remove(adm);
             context.SaveChanges();
         }
