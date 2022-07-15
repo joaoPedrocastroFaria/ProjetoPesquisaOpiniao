@@ -597,6 +597,16 @@
             "rid": "win"
           }
         }
+      },
+      "DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTO.dll": {}
+        }
       }
     }
   },
@@ -1762,28 +1772,34 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DTO/1.0.0": {
+      "type": "project",
+      "path": "../DTO/DTO.csproj",
+      "msbuildProject": "../DTO/DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DTO >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.6"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BAL4CT\\.nuget\\packages\\": {}
+    "C:\\Users\\con1ct\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\Model.csproj",
-      "packagesPath": "C:\\Users\\BAL4CT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\obj\\",
+      "projectPath": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\model\\Model.csproj",
+      "packagesPath": "C:\\Users\\con1ct\\.nuget\\packages\\",
+      "outputPath": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\BAL4CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\con1ct\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1796,7 +1812,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\DTO\\DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

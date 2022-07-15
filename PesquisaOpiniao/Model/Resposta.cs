@@ -47,7 +47,7 @@ public class Resposta
         return id;
     }
     public static object findById(int id){
-        using (var context =new Context()){
+        using (var context = new Context()){
             var resposta = context.Resposta.Where(a=>a.Id==id).Single();
             return resposta;
         }

@@ -1,11 +1,13 @@
 namespace Model;
 using Microsoft.EntityFrameworkCore;
+using DTO;
 public class Pesquisa
 {
     public int Id {get;set;}
     public string Nome {get;set;}
     public string Codigo {get;set;}
     public Adm Adm {get;set;}
+    public int AdmId {get;set;}
     public List<Pergunta>Perguntas {get;set;}//dependencia
     //contrutores
     public Pesquisa(){}
@@ -69,9 +71,13 @@ public class Pesquisa
             return pesquisa;
         }
     }
+
     public static object getByCodigo(string codigo){
-        using(var context =new Context()){
+        using(var context = new Context())
+        {
             var pesquisa = context.Pesquisa.Where(a=>a.Codigo == codigo).Single();
+            // var adm = context.Adm.Where(a=> a.Id == pesquisa.AdmId).Single();
+            // pesquisa.Adm = adm;
             return pesquisa;
         }
     }

@@ -13,3 +13,15 @@ C:\Users\BAL4CT\Desktop\Repositorios\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\
 C:\Users\BAL4CT\Desktop\Repositorios\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\obj\Debug\net6.0\refint\DTO.dll
 C:\Users\BAL4CT\Desktop\Repositorios\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\obj\Debug\net6.0\DTO.pdb
 C:\Users\BAL4CT\Desktop\Repositorios\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\obj\Debug\net6.0\ref\DTO.dll
+C:\git\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\bin\Debug\net6.0\DTO.deps.json
+C:\git\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\bin\Debug\net6.0\DTO.dll
+C:\git\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\bin\Debug\net6.0\DTO.pdb
+C:\git\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+C:\git\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+C:\git\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+C:\git\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+C:\git\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\obj\Debug\net6.0\DTO.dll
+C:\git\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\obj\Debug\net6.0\refint\DTO.dll
+C:\git\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\obj\Debug\net6.0\DTO.pdb
+C:\git\ProjetoPesquisaOpiniao\PesquisaOpiniao\DTO\obj\Debug\net6.0\ref\DTO.dll

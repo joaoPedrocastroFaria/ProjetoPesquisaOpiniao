@@ -9,7 +9,7 @@ public class Context : DbContext{
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
         // optionsBuilder.UseSqlServer("Data Source = JVLPC0581;" + "Initial Catalog = marketPlace; Integrated Security=True"); //bdjao
-        optionsBuilder.UseSqlServer("Data Source = JVLPC0571;" + "Initial Catalog = pesquisaOpinion; Integrated Security=True"); //bdluisao
+        optionsBuilder.UseSqlServer("Data Source = JVLPC0510\\SQLSERVER;" + "Initial Catalog = pesquisaOpinion; Integrated Security=True"); //bdluisao
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder){
         base.OnModelCreating(modelBuilder);

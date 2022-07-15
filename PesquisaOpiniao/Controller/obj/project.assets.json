@@ -672,9 +672,6 @@
       "DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Model": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/DTO.dll": {}
         },
@@ -686,6 +683,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "DTO": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6"
         },
@@ -2005,19 +2003,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BAL4CT\\.nuget\\packages\\": {}
+    "C:\\Users\\con1ct\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Controller\\Controller.csproj",
+      "projectUniqueName": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\controller\\Controller.csproj",
       "projectName": "Controller",
-      "projectPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Controller\\Controller.csproj",
-      "packagesPath": "C:\\Users\\BAL4CT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Controller\\obj\\",
+      "projectPath": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\controller\\Controller.csproj",
+      "packagesPath": "C:\\Users\\con1ct\\.nuget\\packages\\",
+      "outputPath": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\controller\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\BAL4CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\con1ct\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2031,11 +2029,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\DTO\\DTO.csproj": {
-              "projectPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\DTO\\DTO.csproj"
+            "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\DTO\\DTO.csproj"
             },
-            "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\BAL4CT\\Desktop\\Repositorios\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\Model.csproj"
+            "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\Model.csproj": {
+              "projectPath": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Model\\Model.csproj"
             }
           }
         }

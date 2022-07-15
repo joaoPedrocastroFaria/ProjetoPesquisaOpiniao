@@ -9,10 +9,10 @@ namespace Controller.Controllers;
 public class PesquisaController : ControllerBase {
 
     [HttpGet]
-    [Route("get")]
-    public IActionResult getPesquisa([FromBody]string codigo){
+    [Route("get/{codigo}")]
+    public object getPesquisa(string codigo){
         var pesquisa = Model.Pesquisa.getByCodigo(codigo);
-
-        return new ObjectResult(pesquisa);
+        Response.Headers.Add("Access-Control-Allow-Origin" , "*");
+        return pesquisa;
     }
 }
