@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\controller\\Controller.csproj": {}
+    "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Controller\\Controller.csproj": {}
   },
   "projects": {
-    "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\controller\\Controller.csproj": {
+    "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Controller\\Controller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\controller\\Controller.csproj",
+        "projectUniqueName": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Controller\\Controller.csproj",
         "projectName": "Controller",
-        "projectPath": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\controller\\Controller.csproj",
+        "projectPath": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Controller\\Controller.csproj",
         "packagesPath": "C:\\Users\\con1ct\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\controller\\obj\\",
+        "outputPath": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Controller\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\con1ct\\AppData\\Roaming\\NuGet\\NuGet.Config",

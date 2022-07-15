@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m4+HgbKfpsSGBuHrDwNTtN5q2+vM/qzcRaJ+XUQXgaiUKn3fL89aTW5FOtG6sd8ztK5+mB6AoH4iHYVWv41fdQ==",
+  "dgSpecHash": "s9fuqCpsKib98B2GKTm+o0bPd6pi4bRTfTKPThFMs16bZoNSPmmOYs8xyJN4CGR2/Wd9h1sUcGJUVpI6ey+3QQ==",
   "success": true,
-  "projectFilePath": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\controller\\Controller.csproj",
+  "projectFilePath": "C:\\git\\ProjetoPesquisaOpiniao\\PesquisaOpiniao\\Controller\\Controller.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\con1ct\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\con1ct\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

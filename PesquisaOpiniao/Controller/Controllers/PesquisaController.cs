@@ -11,8 +11,19 @@ public class PesquisaController : ControllerBase {
     [HttpGet]
     [Route("get/{codigo}")]
     public object getPesquisa(string codigo){
-        var pesquisa = Model.Pesquisa.getByCodigo(codigo);
+        Pesquisa pesquisa = Model.Pesquisa.getByCodigo(codigo);
         Response.Headers.Add("Access-Control-Allow-Origin" , "*");
         return pesquisa;
+    }
+
+
+    [HttpGet]
+    [Route("getPerguntas/{id}")]
+    public List<Pergunta> getPerguntas(int id){
+        Console.WriteLine("Passou");
+        var perguntas = Model.Pesquisa.getAllPerguntas(id);
+        Response.Headers.Add("Access-Control-Allow-Origin" , "*");
+
+        return perguntas;
     }
 }
