@@ -8,7 +8,7 @@ public class Pesquisa
     public string Codigo {get;set;}
     public Adm Adm {get;set;}
     public int AdmId {get;set;}
-    public List<Pergunta>Perguntas {get;set;}//dependencia
+    public List<Pergunta> Perguntas {get;set;}//dependencia
     //contrutores
     public Pesquisa(){}
     public Pesquisa(string nome, string codigo,Adm adm){
@@ -72,13 +72,32 @@ public class Pesquisa
         }
     }
 
-    public static object getByCodigo(string codigo){
+    public static Pesquisa getByCodigo(string codigo){
         using(var context = new Context())
         {
             var pesquisa = context.Pesquisa.Where(a=>a.Codigo == codigo).Single();
             // var adm = context.Adm.Where(a=> a.Id == pesquisa.AdmId).Single();
             // pesquisa.Adm = adm;
+            pesquisa.Perguntas = Pesquisa.getAllPerguntas(pesquisa.Id);
+            foreach( Pergunta pg in pesquisa.Perguntas){
+                pg.Alternativas = Pergunta.getAllAlternativas(pg.Id);
+            }
             return pesquisa;
         }
+    }
+
+    public static List<Pergunta> getAllPerguntas(int id)
+    {
+        using (var context = new Context())
+        {
+            List<Pergunta> perguntas = new List<Pergunta>();
+            var perguntasQuery = context.Pergunta.Where(a => a.PesquisaId == id);
+            foreach (Pergunta pg in perguntasQuery)
+            {
+                perguntas.Add(pg);
+            }
+            return perguntas;
+        }
+
     }
 }

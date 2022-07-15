@@ -9,6 +9,7 @@ public class Alternativas
     public int Id {get;set;}
     public string ConteudoAlternativa {get;set;}
     public Pergunta Pergunta {get;set;}//dependencia
+    public int PerguntaId {get;set;}
     //contrutores
     public Alternativas(){}
     public Alternativas(string conteudoAlternativa, Pergunta pergunta){
@@ -70,7 +71,7 @@ public class Alternativas
     }
     public static object findById(int id){
         using (var context =new Context()){
-            var alternativas = context.Alternativas.Where(a=>a.Id==id).Single();
+            var alternativas = context.Alternativas.Where(a=>a.PerguntaId == id).Single();
             return alternativas;
         }
     }

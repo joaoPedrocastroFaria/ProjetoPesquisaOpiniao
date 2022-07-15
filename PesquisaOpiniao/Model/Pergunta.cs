@@ -13,6 +13,9 @@ public class Pergunta
     public List<Alternativas> Alternativas {get;set;} //dependencia
     public List<Resposta> Respostas {get;set;}
     public Pesquisa Pesquisa {get;set;}
+
+    public int PesquisaId {get;set;}
+
     //contrutores
     public Pergunta(){}
     public Pergunta(string conteudoPergunta,int tipoPergunta, int qtddAlternativas){
@@ -80,11 +83,24 @@ public class Pergunta
         }
     }
     public static object findById(int id){
-        using (var context =new Context()){
+        using (var context = new Context()){
             var pergunta = context.Pergunta.Where(a=>a.Id==id).Single();
             return pergunta;
         }
     }
-}
+
+    public static List<Alternativas> getAllAlternativas (int id){
+        using (var context = new Context()){
+            List<Alternativas> alternativas = new List<Alternativas>();
+            var alternativasQuery = context.Alternativas.Where(a => a.PerguntaId == id);
+            foreach (Alternativas pg in alternativasQuery)
+            {
+                alternativas.Add(pg);
+                Console.WriteLine(pg.ConteudoAlternativa);
+            }
+            return alternativas;
+        }
+    }
+} 
 
 
